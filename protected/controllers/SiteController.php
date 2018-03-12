@@ -82,11 +82,13 @@ class SiteController extends Controller
             $model->attributes = $_POST['LoginForm'];
             if ($model->validate() && $model->login())
             {
+
+              //  $this->redirect(Yii::app()->user->returnUrl);
                 $this->redirect(array('site/dashboard'));
             }    
         }
 
-        $this->render('login', array('model' => $model));
+        $this->render('login',array('model' => $model));
     }
     
     
@@ -104,13 +106,12 @@ class SiteController extends Controller
     {
         $this->layout = false;
         $this->layout = 'login';
+        header('Location: ?r=site/login');
+        Yii::app()->user->logout();
         unset($_SESSION);
-        $_SESSION     = array();
-        // unset($_COOKIE);
-        Yii::app()->session->clear();
-        Yii::app()->session->destroy();
-        Yii::app()->user->logout(false);
-         header('Location: ?r=site/login');
+        $_SESSION = array();
+        unset($_COOKIE);
+
     }
 
 }

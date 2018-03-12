@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Patient Complaince Security Application</title>
+    <title>User Information Security Application</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <meta name="layout" content="main"/>
@@ -45,7 +45,7 @@
 
         <footer class="application-footer">
             <div class="container">
-                <p>Patient Complaince Security Application</p>
+                <p>User Information Security Application</p>
                 <div class="disclaimer">
                     <p><?php echo Yii::app()->params['copyrightInfo']; ?></p>
                 </div>

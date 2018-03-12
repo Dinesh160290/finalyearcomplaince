@@ -1,3 +1,7 @@
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/scripts/jquery/jquery-1.8.2.min.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/customize-template.css" media="screen, projection" />
+
 <div class="signin-row row">
     <div class="span4"></div>
     <div class="span8">
@@ -49,3 +53,32 @@
         width: 400px;
     }
 </style>
+
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/scripts/bootstrap/bootstrap-transition.js" type="text/javascript"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/scripts/bootstrap/bootstrap-alert.js" type="text/javascript"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/scripts/bootstrap/bootstrap-modal.js" type="text/javascript"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/scripts/bootstrap/bootstrap-dropdown.js" type="text/javascript"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/scripts/bootstrap/bootstrap-scrollspy.js" type="text/javascript"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/scripts/bootstrap/bootstrap-tab.js" type="text/javascript"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/scripts/bootstrap/bootstrap-tooltip.js" type="text/javascript"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/scripts/bootstrap/bootstrap-popover.js" type="text/javascript"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/scripts/bootstrap/bootstrap-button.js" type="text/javascript"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/scripts/bootstrap/bootstrap-collapse.js" type="text/javascript"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/scripts/bootstrap/bootstrap-carousel.js" type="text/javascript"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/scripts/bootstrap/bootstrap-typeahead.js" type="text/javascript"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/scripts/bootstrap/bootstrap-affix.js" type="text/javascript"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/scripts/bootstrap/bootstrap-datepicker.js" type="text/javascript"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/scripts/jquery/jquery-tablesorter.js" type="text/javascript"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/scripts/jquery/jquery-chosen.js" type="text/javascript"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/scripts/jquery/virtual-tour.js" type="text/javascript"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/scripts/bootstrap/bootstrap-validatepass.js" type="text/javascript"></script>
+
+
+<script type='text/javascript'>
+
+    $(function() {
+        $('#sample-table').tablesorter();
+        $('#datepicker').datepicker();
+        $(".chosen").chosen();
+    });
+</script>

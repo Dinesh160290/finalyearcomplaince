@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Patient Complaince Security Application</title>
+        <title>User Information Security Application</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <meta name="layout" content="main"/>
@@ -26,7 +26,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="dashboard.html" class="brand"><i class="icon-leaf"></i></a>
+                    <a href="index.php?r=site/dashboard" class="brand"><i class="icon-leaf"></i></a>
                     <div id="app-nav-top-bar" class="nav-collapse">
                         <ul class="nav">
                             
@@ -36,10 +36,10 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="form.html">Registration</a>
+                                        <a href="<?php echo $this->createUrl('user/register'); ?>">Registration</a>
                                     </li>
                                     <li>
-                                        <a href="login.html">Login Page</a>
+                                        <a href="<?php echo $this->createUrl('site/login'); ?>">Login Page</a>
                                     </li>
                                 </ul>
                             </li>
@@ -63,43 +63,14 @@
                 <div class="container">
                     <ul>
                         <li><a href="<?php echo $this->createUrl('user/register'); ?>"><i class="icon-dashboard icon-large"></i> Registration</a></li>
-                        <li><a href="#"><i class="icon-calendar icon-large"></i> Schedule</a></li>
-                        <li><a href="#"><i class="icon-tasks icon-large"></i> Widgets</a></li>
+                        <li><a href="<?php echo $this->createUrl('user/loan'); ?>"><i class="icon-calendar icon-large"></i> Loans</a></li>
+                        <li><a href="#"><i class="icon-tasks icon-large"></i> Payments</a></li>
                         <li><a href="#"><i class="icon-cogs icon-large"></i> Settings</a></li>
                         <li><a href="#"><i class="icon-list-alt icon-large"></i> Forms</a></li>
                         <li><a href="#"><i class="icon-bar-chart icon-large"></i> Charts</a></li>
                     </ul>
                 </div>
             </div>
-
-
-            <section class="nav-page" pageVTourUrl="guide/tour/form-tour.html"
-                     pageVGuideUrl="guide/form-guide.html" >
-                <div class="container">
-                    <div class="row">
-                        <div class="span7">
-                            <header class="page-header">
-                                <h3>My Account<br/><small>Edit My Account Security</small></h3>
-                            </header>
-                        </div>
-                        <div class="span9">
-                            <ul class="nav nav-pills">
-                                <li>
-                                    <button id="vtour-button" rel="tooltip" title="Launch Virtual Tour" data-placement="bottom">
-                                        <i class="icon-magic icon-large"></i>
-                                    </button>
-                                </li>
-                                <li>
-                                    <button id="vguide-button" rel="tooltip" title="Launch Guide" data-placement="bottom">
-                                        <i class="icon-question-sign icon-large"></i>
-                                    </button>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             <?php echo $content; ?>
 
         </div>
@@ -110,7 +81,7 @@
 
     <footer class="application-footer">
         <div class="container">
-            <p>Patient Complaince Security Application</p>
+            <p>User Information Security Application</p>
             <div class="disclaimer">
                 <p><?php echo Yii::app()->params['copyrightInfo']; ?></p>
             </div>

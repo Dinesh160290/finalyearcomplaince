@@ -1,2 +1,40 @@
-<br/>
-<h1><?php echo 'Welcome   ' . Yii::app()->user->name; ?></h1>
+<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main11.css"/>
+</br>
+</br>
+</br>
+<table class="container">
+    <thead>
+    <tr>
+        <th><h1>Name</h1></th>
+        <th><h1>E-mail</h1></th>
+        <th><h1>State</h1></th>
+        <th><h1>Phone</h1></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>RAJU</td>
+        <td>raju@mgm.com</td>
+        <td>Maharastra</td>
+        <td>9836251478</td>
+    </tr>
+    <tr>
+        <td>Sanjay</td>
+        <td>sanjay112@hotmail.com</td>
+        <td>UttarPradesh</td>
+        <td>8523645892</td>
+    </tr>
+    <tr>
+        <td>Irfan</td>
+        <td>mohd.irfan@gmail.com</td>
+        <td>Andhra Pradesh</td>
+        <td>8564121638</td>
+    </tr>
+    <tr>
+        <td>Vinay</td>
+        <td>vinu@ymail.com</td>
+        <td>Delhi</td>
+        <td>7785462632</td>
+    </tr>
+  </tbody>
+</table>

@@ -766,3 +766,651 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/complaince/index.php/tQRxoV_UHsPRXf33uBxtU_CAQJFMTmCDnuz7B09d5Rw
 ---
+2018/02/21 09:19:35 [error] [exception.CDbException] SQLSTATE[HY000] [1049] Unknown database 'blog'
+2018/02/21 09:19:35 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection. in C:\xampp\htdocs\framework\db\CDbConnection.php:405
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\xampp\htdocs\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\framework\base\CModule.php(394): CDbConnection->init()
+#3 C:\xampp\htdocs\framework\base\CApplication.php(459): CModule->getComponent('db')
+#4 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(639): CApplication->getDb()
+#5 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(672): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1463): CActiveRecord->getCommandBuilder()
+#7 C:\xampp\htdocs\complaince\protected\components\UserIdentity.php(18): CActiveRecord->find('LOWER(username)...', Array)
+#8 C:\xampp\htdocs\complaince\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#9 C:\xampp\htdocs\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#10 C:\xampp\htdocs\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#11 C:\xampp\htdocs\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#12 C:\xampp\htdocs\complaince\protected\controllers\SiteController.php(83): CModel->validate()
+#13 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#14 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('login')
+#18 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#19 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\complaince\index.php(12): CApplication->run()
+#21 {main}
+REQUEST_URI=/complaince/index.php/ISBoZs10iZPFsrKYxhBAZYiFOCd2pPWPhb6lm_kOW_o?r=site/login
+HTTP_REFERER=http://localhost/complaince/index.php/ISBoZs10iZPFsrKYxhBAZYiFOCd2pPWPhb6lm_kOW_o?r=site/login
+---
+2018/02/21 09:20:13 [error] [exception.CDbException] SQLSTATE[HY000] [1049] Unknown database 'blog'
+2018/02/21 09:20:13 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection. in C:\xampp\htdocs\framework\db\CDbConnection.php:405
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\xampp\htdocs\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\framework\base\CModule.php(394): CDbConnection->init()
+#3 C:\xampp\htdocs\framework\base\CApplication.php(459): CModule->getComponent('db')
+#4 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(639): CApplication->getDb()
+#5 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(672): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1463): CActiveRecord->getCommandBuilder()
+#7 C:\xampp\htdocs\complaince\protected\components\UserIdentity.php(18): CActiveRecord->find('LOWER(username)...', Array)
+#8 C:\xampp\htdocs\complaince\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#9 C:\xampp\htdocs\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#10 C:\xampp\htdocs\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#11 C:\xampp\htdocs\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#12 C:\xampp\htdocs\complaince\protected\controllers\SiteController.php(83): CModel->validate()
+#13 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#14 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('login')
+#18 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#19 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\complaince\index.php(12): CApplication->run()
+#21 {main}
+REQUEST_URI=/complaince/index.php/ISBoZs10iZPFsrKYxhBAZYiFOCd2pPWPhb6lm_kOW_o?r=site/login
+HTTP_REFERER=http://localhost/complaince/index.php/ISBoZs10iZPFsrKYxhBAZYiFOCd2pPWPhb6lm_kOW_o?r=site/login
+---
+2018/02/21 09:20:33 [error] [exception.CDbException] SQLSTATE[HY000] [1049] Unknown database 'blog'
+2018/02/21 09:20:33 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection. in C:\xampp\htdocs\framework\db\CDbConnection.php:405
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\xampp\htdocs\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\framework\base\CModule.php(394): CDbConnection->init()
+#3 C:\xampp\htdocs\framework\base\CApplication.php(459): CModule->getComponent('db')
+#4 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(639): CApplication->getDb()
+#5 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(672): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1463): CActiveRecord->getCommandBuilder()
+#7 C:\xampp\htdocs\complaince\protected\components\UserIdentity.php(18): CActiveRecord->find('LOWER(username)...', Array)
+#8 C:\xampp\htdocs\complaince\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#9 C:\xampp\htdocs\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#10 C:\xampp\htdocs\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#11 C:\xampp\htdocs\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#12 C:\xampp\htdocs\complaince\protected\controllers\SiteController.php(83): CModel->validate()
+#13 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#14 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('login')
+#18 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#19 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\complaince\index.php(12): CApplication->run()
+#21 {main}
+REQUEST_URI=/complaince/index.php/ISBoZs10iZPFsrKYxhBAZYiFOCd2pPWPhb6lm_kOW_o?r=site/login
+HTTP_REFERER=http://localhost/complaince/index.php/ISBoZs10iZPFsrKYxhBAZYiFOCd2pPWPhb6lm_kOW_o?r=site/login
+---
+2018/02/21 09:21:05 [error] [exception.CDbException] SQLSTATE[HY000] [1049] Unknown database 'blog'
+2018/02/21 09:21:05 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection. in C:\xampp\htdocs\framework\db\CDbConnection.php:405
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\xampp\htdocs\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\framework\base\CModule.php(394): CDbConnection->init()
+#3 C:\xampp\htdocs\framework\base\CApplication.php(459): CModule->getComponent('db')
+#4 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(639): CApplication->getDb()
+#5 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(672): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1463): CActiveRecord->getCommandBuilder()
+#7 C:\xampp\htdocs\complaince\protected\components\UserIdentity.php(18): CActiveRecord->find('LOWER(username)...', Array)
+#8 C:\xampp\htdocs\complaince\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#9 C:\xampp\htdocs\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#10 C:\xampp\htdocs\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#11 C:\xampp\htdocs\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#12 C:\xampp\htdocs\complaince\protected\controllers\SiteController.php(83): CModel->validate()
+#13 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#14 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('login')
+#18 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#19 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\complaince\index.php(12): CApplication->run()
+#21 {main}
+REQUEST_URI=/complaince/index.php/ISBoZs10iZPFsrKYxhBAZYiFOCd2pPWPhb6lm_kOW_o?r=site/login
+HTTP_REFERER=http://localhost/complaince/index.php/ISBoZs10iZPFsrKYxhBAZYiFOCd2pPWPhb6lm_kOW_o?r=site/login
+---
+2018/02/21 09:21:22 [error] [exception.CDbException] SQLSTATE[HY000] [1049] Unknown database 'blog'
+2018/02/21 09:21:22 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection. in C:\xampp\htdocs\framework\db\CDbConnection.php:405
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\xampp\htdocs\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\framework\base\CModule.php(394): CDbConnection->init()
+#3 C:\xampp\htdocs\framework\base\CApplication.php(459): CModule->getComponent('db')
+#4 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(639): CApplication->getDb()
+#5 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(672): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1463): CActiveRecord->getCommandBuilder()
+#7 C:\xampp\htdocs\complaince\protected\components\UserIdentity.php(18): CActiveRecord->find('LOWER(username)...', Array)
+#8 C:\xampp\htdocs\complaince\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#9 C:\xampp\htdocs\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#10 C:\xampp\htdocs\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#11 C:\xampp\htdocs\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#12 C:\xampp\htdocs\complaince\protected\controllers\SiteController.php(83): CModel->validate()
+#13 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#14 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('login')
+#18 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#19 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\complaince\index.php(12): CApplication->run()
+#21 {main}
+REQUEST_URI=/complaince/
+HTTP_REFERER=http://localhost/complaince/
+---
+2018/02/21 09:49:25 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "&ŒéVa‚2R^€idL),Ëom¢r)QtÏÇßÎíàù¾¥º‹D_×ÖAãôÆåð†_´”¯†œ´ý…+[åqŠ¡úcw¥®&Ø{YôRn¡åœ¾²fè]". in C:\xampp\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('&\x8C\xE9\x03Va\x822\x02R^\x19\x80i\x81...')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\complaince\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/complaince/index.php/IB_lvQgWYX7z2iBCsfPQKz3NzLvXxlOeenFcM7DWraIhttp://localhost/complaince/index.php/IB_lvQgWYX7z2iBCsfPQKz3NzLvXxlOeenFcM7DWraI
+---
+2018/02/21 09:49:35 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "S5˜¶C?DƒÈ¯°ˆPø¤Z¾æ§÷¡—u
+$ÙâÂõŠùÁ". in C:\xampp\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('S5\x98\xB6C?D\x83\xC8\xAF\xB0\x88P\xF8\xA4...')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\complaince\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/complaince/index.php/form.html
+HTTP_REFERER=http://localhost/complaince/index.php/IB_lvQgWYX7z2iBCsfPQKz3NzLvXxlOeenFcM7DWraI
+---
+2018/02/21 09:49:44 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ß°EèÍ2E™Ö&#ðÅ¢e²Y»‰ž?
+>Db". in C:\xampp\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('\xDF\xB0E\f\x15\x10\f\xE8\xCD2E\x99\xD6\x1C\x81...')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\complaince\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/complaince/index.php/login.html
+HTTP_REFERER=http://localhost/complaince/index.php/IB_lvQgWYX7z2iBCsfPQKz3NzLvXxlOeenFcM7DWraI
+---
+2018/02/22 04:59:54 [error] [exception.CException] CException: Property "CWebApplication.site" is not defined. in C:\xampp\htdocs\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\framework\base\CModule.php(105): CComponent->__get('site')
+#1 C:\xampp\htdocs\complaince\protected\controllers\SiteController.php(86): CModule->__get('site')
+#2 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#3 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('login')
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#8 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\complaince\index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/complaince/index.php/wxcwswBIKJtqvIdafb2IHvXVG4k-nvUE45bqv94a7dA?r=site/login
+HTTP_REFERER=http://localhost/complaince/index.php/wxcwswBIKJtqvIdafb2IHvXVG4k-nvUE45bqv94a7dA?r=site/login
+---
+2018/02/22 05:00:05 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "½¡øž:!>çdÏ–¯~e½ïàç¬N]ô-)ÕÕN". in C:\xampp\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('\xBD\xA1\xF8\x16\x9E:!>\x08\xE7d\xCF\x96\xAF~...')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\complaince\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/complaince/index.php/ryKYDaOIqpU7Ik7gGyNFB5ICHGpCSPuIsXYZH05q7SU
+HTTP_REFERER=http://localhost/complaince/index.php/X1G0a9xzGJwnBOV3KBh5KcpZncujmWL3mB-cQf2h3FQ
+---
+2018/02/22 05:00:31 [error] [exception.CException] CException: Property "CWebApplication.dashboard" is not defined. in C:\xampp\htdocs\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\framework\base\CModule.php(105): CComponent->__get('dashboard')
+#1 C:\xampp\htdocs\complaince\protected\controllers\SiteController.php(86): CModule->__get('dashboard')
+#2 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#3 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('login')
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#8 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\complaince\index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/complaince/
+HTTP_REFERER=http://localhost/complaince/
+---
+2018/02/22 05:01:21 [error] [exception.CException] CException: Property "CWebApplication.dashboard" is not defined. in C:\xampp\htdocs\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\framework\base\CModule.php(105): CComponent->__get('dashboard')
+#1 C:\xampp\htdocs\complaince\protected\controllers\SiteController.php(86): CModule->__get('dashboard')
+#2 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#3 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('login')
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#8 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\complaince\index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/complaince/
+HTTP_REFERER=http://localhost/complaince/
+---
+2018/02/22 05:08:59 [error] [exception.CException] CException: Property "CWebApplication.contact" is not defined. in C:\xampp\htdocs\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\framework\base\CModule.php(105): CComponent->__get('contact')
+#1 C:\xampp\htdocs\complaince\protected\controllers\SiteController.php(86): CModule->__get('contact')
+#2 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#3 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('login')
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#8 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\complaince\index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/complaince/index.php
+HTTP_REFERER=http://localhost/complaince/index.php
+---
+2018/02/22 05:10:04 [error] [exception.CException] CException: Property "CWebUser.dashboard" is not defined. in C:\xampp\htdocs\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\auth\CWebUser.php(146): CComponent->__get('dashboard')
+#1 C:\xampp\htdocs\complaince\protected\controllers\SiteController.php(86): CWebUser->__get('dashboard')
+#2 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#3 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('login')
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#8 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\complaince\index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/complaince/index.php
+HTTP_REFERER=http://localhost/complaince/index.php
+---
+2018/02/22 05:20:09 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "a¡³û'õâ^ï£ñÅÚYt°ï Ì2ã¤½n in C:\xampp\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('a\xA1\xB3\xFB\x1D'\xF5\xE2^\xEF\xA3\xF1\xC5\xDAY...')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\complaince\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/complaince/index.php/BK0DR3CPkAGLryUMXbsip49pvQ1r60NM744WfGK00R8
+---
+2018/02/22 05:20:24 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "¹u³à7MŠ(™K‹¶áp÷÷šŠ÷0¥2é@{'`2¬". in C:\xampp\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('\xB9u\x1F\xB3\xE07M\x9D\x8A(\x99K\x8B\xB6\xE1...')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\complaince\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/complaince/index.php/gFgsmMnOG9f9VJFDRTKyxqpGdgimemD2sVSgkemWodI
+---
+2018/02/22 05:20:53 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "T¯ú ³ÁD3oü	Fˆ¼ÙÂwÐ!¥/p¼Œr". in C:\xampp\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('\x06T\xAF\xFA\xA0\xB3\xC1\x05D3o\xFC\tF\x88...')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\complaince\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/complaince/index.php/BK0DR3CPkAGLryUMXbsip49pvQ1r60NM744WfGK00R8
+HTTP_REFERER=http://localhost/complaince/index.php
+---
+2018/02/22 05:20:58 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "T¯ú ³ÁD3oü	Fˆ¼ÙÂwÐ!¥/p¼Œr". in C:\xampp\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('\x06T\xAF\xFA\xA0\xB3\xC1\x05D3o\xFC\tF\x88...')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\complaince\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/complaince/index.php/BK0DR3CPkAGLryUMXbsip49pvQ1r60NM744WfGK00R8
+HTTP_REFERER=http://localhost/complaince/index.php
+---
+2018/02/22 05:21:19 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "U™psØßyÉ;SLõøúEì·f+­q÷Êp+«7". in C:\xampp\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('U\e\x99p\x18s\xD8\xDF\x10y\xC9;\x9DSL...')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\complaince\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/complaince/index.php/7wa09FJtCXPkWfOrYmnGuUIE8k5MEziSmhB3Qtqk7-Q
+---
+2018/02/22 05:45:13 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request ") in C:\xampp\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController(')\x00N\xAF\xBE[\xC2\xAD\x8C.\xB5Z2\xED\xC5...')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\complaince\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/complaince/index.php/7wa09FJtCXPkWfOrYmnGuUIE8k5MEziSmhB3Qtqk7-Q
+HTTP_REFERER=http://localhost/complaince/index.php
+---
+2018/02/22 05:45:59 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ydô|—pE[©¯ŒòsA#{Çk~¡ß/t in C:\xampp\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('\x1C\x12yd\xF4|\x1D\x97pE[\xA9\xAF\x8C\xF2...')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\complaince\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/complaince/index.php/CEQwXXFytGAL2cnibVxMbYhZxgwwqBOnNzVmJZ1DWQo
+---
+2018/02/22 05:49:43 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "*^ü#ü+El?g;dQj’”R¤´ÍX«;Ó°e&Áý". in C:\xampp\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('*^\xFC#\xFC+El?\x8Dg;dQj...')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\complaince\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/complaince/index.php/CEQwXXFytGAL2cnibVxMbYhZxgwwqBOnNzVmJZ1DWQo
+---
+2018/02/22 09:35:36 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "registration". in C:\xampp\htdocs\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('registration')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('registration')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('user/registrati...')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\Altered\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/altered/index.php/registration.php?r=user/registration
+HTTP_REFERER=http://localhost/altered/index.php/LeBrdH8mURevo2tmvEngClZVC-K4zsCnmv-v9NOsAlw
+---
+2018/02/22 11:27:16 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "index". in C:\xampp\htdocs\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('user/index')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\Altered\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/altered/index.php?r=user/index
+HTTP_REFERER=http://localhost/altered/index.php?r=site/dashboard
+---
+2018/02/22 11:27:40 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "index". in C:\xampp\htdocs\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('user/index')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\Altered\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/altered/index.php?r=user/index
+HTTP_REFERER=http://localhost/altered/index.php?r=site/dashboard
+---
+2018/02/22 11:28:12 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "dashboard". in C:\xampp\htdocs\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('dashboard')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('dashboard')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\Altered\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/altered/index.php?r=user/dashboard
+HTTP_REFERER=http://localhost/altered/index.php?r=site/dashboard
+---
+2018/02/22 11:28:16 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "dashboard". in C:\xampp\htdocs\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('dashboard')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('dashboard')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\Altered\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/altered/index.php?r=user/dashboard
+HTTP_REFERER=http://localhost/altered/index.php?r=site/dashboard
+---
+2018/02/26 07:38:15 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "loan". in C:\xampp\htdocs\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('loan')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('loan')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('user/loan')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\Altered\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/altered/index.php?r=user/loan
+HTTP_REFERER=http://localhost/altered/index.php?r=user/register
+---
+2018/02/26 08:53:01 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "loan". in C:\xampp\htdocs\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('loan')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('loan')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('user/loan')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\Altered\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/altered/index.php?r=user/loan
+HTTP_REFERER=http://localhost/altered/index.php?r=site/dashboard
+---
+2018/02/26 09:09:35 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "üÄ^9„,B­ÏAÞNˆsy-"—¯–¢_Ÿ»l}¸"éw". in C:\xampp\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('\xFC\xC4^9\x84\x01,B\xAD\xCFA\xDEN\x88s...')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\Altered\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/altered/index.php/nkFPJvODKVk4PLIcQkJisKg4CEUClkIn-jk7T_aCtTE
+---
+2018/02/26 09:09:50 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ÿšLdRÕ-W,¤ŒïgÉÇ	­RdBóä® ûX". in C:\xampp\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('\xFF\x9ALd\x05R\xD5-\x10W\f,\x18\x18\xA4...')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\Altered\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/altered/index.php/nkFPJvODKVk4PLIcQkJisKg4CEUClkIn-jk7T_aCtTE
+---
+2018/02/26 09:14:40 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "loan.html". in C:\xampp\htdocs\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('loan.html')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('loan.html')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('user/loan.html')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\Altered\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/altered/index.php/index.php?r=user/loan.html
+HTTP_REFERER=http://localhost/altered/index.php/nkFPJvODKVk4PLIcQkJisKg4CEUClkIn-jk7T_aCtTE
+---
+2018/02/26 09:17:32 [error] [php] Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\Altered\protected\config\main.php:34) (C:\xampp\htdocs\framework\web\CHttpRequest.php:889)
+Stack trace:
+#0 C:\xampp\htdocs\Altered\protected\controllers\SiteController.php(87): SiteController->redirect()
+#1 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#2 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\Altered\index.php(12): CWebApplication->run()
+REQUEST_URI=/altered/index.php/KkFzir9eBBVZIVGTaQ_C5gLvAVUkK6kSTFJLPvBG9FA?r=site/login
+2018/02/26 10:08:18 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "nR!'ª@ÛÆ‚J…Á\ in C:\xampp\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('nR\x81\x14!'\xAA\x13@\xDB\xC6\x82J\x85\xC1...')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\Altered\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/altered/index.php/7ljrz0X2wSmuqLELtRmip_Vk2TfteuYPueyeEE0ODXM
+---
+2018/02/26 10:13:27 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "=„&E½•ýb™°´v-{UVô¢+!*—J½½„àWüý*". in C:\xampp\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('=\x84&E\xBD\x95\xFDb\x99\x08\xB0\xB4v-{...')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\Altered\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/altered/index.php/7ljrz0X2wSmuqLELtRmip_Vk2TfteuYPueyeEE0ODXM
+HTTP_REFERER=http://localhost/altered/index.php/KkFzir9eBBVZIVGTaQ_C5gLvAVUkK6kSTFJLPvBG9FA?r=site/login
+---
+2018/02/26 10:13:36 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ší¾³4¼~óÆòá{Þ+:ß8ufù£Š’R#Às{bB". in C:\xampp\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('\x9A\xED\xBE\xB34\xBC~\xF3\xC6\xF2\xE1{\xDE+:...')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\Altered\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/altered/index.php/nkFPJvODKVk4PLIcQkJisKg4CEUClkIn-jk7T_aCtTE
+HTTP_REFERER=http://localhost/altered/index.php?r=site/login
+---
+2018/02/26 10:13:50 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "iÝ(_JÍZÌbœ”bÇ(¶o{-Rd"‘Ë3Zªs". in C:\xampp\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('i\x0E\xDD\x8F(_J\xCDZ\xCC\x18\x05b\x9C\x94...')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\Altered\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/altered/index.php/ooThv6YwprFErZEERo9x_jHrIsSMqe7K4NEgEyyOtE4
+HTTP_REFERER=http://localhost/altered/index.php/KkFzir9eBBVZIVGTaQ_C5gLvAVUkK6kSTFJLPvBG9FA?r=site/login
+---
+2018/02/27 04:37:32 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "loan.html". in C:\xampp\htdocs\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('loan.html')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('loan.html')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('user/loan.html')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\Altered\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/altered/index.php/index.php?r=user/loan.html
+HTTP_REFERER=http://localhost/altered/index.php/B80gz0sBTTDszxti8aMgEpftJC7qHpA0CE2uZUn2ZVE
+---
+2018/02/27 06:13:21 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "loan.html". in C:\xampp\htdocs\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('loan.html')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('loan.html')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('user/loan.html')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\Altered\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/altered/index.php/index.php?r=user/loan.html
+HTTP_REFERER=http://localhost/altered/index.php/qu7AlaIH7c9ggbL8PU8iT-bMXICp9GY4M1-cL0sDD1I
+---
+2018/02/27 06:13:25 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "loan.html". in C:\xampp\htdocs\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('loan.html')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('loan.html')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('user/loan.html')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\Altered\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/altered/index.php/index.php?r=user/loan.html
+HTTP_REFERER=http://localhost/altered/index.php/sdsPNMti0Ry4-RBHIFwP5x9Sv3tKN_tM6SlJiZUgb7w
+---
+2018/02/28 09:43:13 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "má in C:\xampp\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('m\xE1\x00|\xD0\xBDl\x1Du\xB1a\xDC[\xCA:...')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\Altered\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/altered/index.php/dashboard.html
+HTTP_REFERER=http://localhost/altered/index.php/y7B1x2xY68J9xkYoLJ1HDlaV3Bon0wnywnnFb46y_u8
+---
+2018/03/05 07:27:14 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "loan.html". in C:\xampp\htdocs\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('loan.html')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('loan.html')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('user/loan.html')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\Altered\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/altered/index.php/index.php?r=user/loan.html
+HTTP_REFERER=http://localhost/altered/index.php/F9hDybItACBLLNQMr4Q2VvtqJ87U-6TmcpGXgNnCDvM
+---
+2018/03/05 07:27:17 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "loan.html". in C:\xampp\htdocs\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('loan.html')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('loan.html')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('user/loan.html')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\Altered\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/altered/index.php/index.php?r=user/loan.html
+HTTP_REFERER=http://localhost/altered/index.php/F9hDybItACBLLNQMr4Q2VvtqJ87U-6TmcpGXgNnCDvM
+---
+2018/03/05 07:31:49 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "loan.html". in C:\xampp\htdocs\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('loan.html')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('loan.html')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('user/loan.html')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\Altered\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/altered/index.php/index.php?r=user/loan.html
+HTTP_REFERER=http://localhost/altered/index.php/F9hDybItACBLLNQMr4Q2VvtqJ87U-6TmcpGXgNnCDvM
+---
+2018/03/05 07:36:39 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "loan.html". in C:\xampp\htdocs\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('loan.html')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('loan.html')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('user/loan.html')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\Altered\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/altered/index.php/index.php?r=user/loan.html
+HTTP_REFERER=http://localhost/altered/index.php/F9hDybItACBLLNQMr4Q2VvtqJ87U-6TmcpGXgNnCDvM
+---
+2018/03/09 09:37:41 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "loan.html". in C:\xampp\htdocs\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('loan.html')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('loan.html')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('user/loan.html')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\Altered\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/altered/index.php/index.php?r=user/loan.html
+HTTP_REFERER=http://localhost/altered/index.php/AV_UpAeJDpjsZJVRKqlBbnerWtJfV1Lf9sO8-Tdmei8
+---
+2018/03/09 09:43:01 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "loan.html". in C:\xampp\htdocs\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('loan.html')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('loan.html')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('user/loan.html')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\Altered\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/altered/index.php/index.php?r=user/loan.html
+HTTP_REFERER=http://localhost/altered/index.php/index.php?r=site/dashboard
+---
+2018/03/12 10:46:56 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "loan.html". in C:\xampp\htdocs\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('loan.html')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('loan.html')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('user/loan.html')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\Altered\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/altered/index.php/index.php?r=user/loan.html
+HTTP_REFERER=http://localhost/altered/index.php/dXTB2UKrBHGmVXmahWQPa8NcFdiJKszPxflsUY9RCDA
+---
+2018/03/12 10:49:29 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "loan.html". in C:\xampp\htdocs\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('loan.html')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('loan.html')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('user/loan.html')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\Altered\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/altered/index.php/index.php?r=user/loan.html
+HTTP_REFERER=http://localhost/altered/index.php/tuB8VVK2VsXjPjzqSVtLKlPkecXSOuO8CuU9lMe3DbM
+---
+2018/03/12 10:50:11 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "loan.html". in C:\xampp\htdocs\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('loan.html')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('loan.html')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('user/loan.html')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\Altered\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/altered/index.php/index.php?r=user/loan.html
+HTTP_REFERER=http://localhost/altered/index.php/dXTB2UKrBHGmVXmahWQPa8NcFdiJKszPxflsUY9RCDA
+---
+2018/03/12 10:56:57 [error] [exception.CException] CException: UserController cannot find the requested view "loan". in C:\xampp\htdocs\framework\web\CController.php:881
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(785): CController->renderPartial('loan', NULL, true)
+#1 C:\xampp\htdocs\Altered\protected\controllers\UserController.php(15): CController->render('loan')
+#2 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): UserController->actionLoan()
+#3 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('loan')
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('user/loan')
+#8 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\Altered\index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/altered/index.php/h3wL5d7f9_fYcPEnnG4udzPM1jDO9yjyT6IaRqC1sOI
+HTTP_REFERER=http://localhost/altered/index.php/dXTB2UKrBHGmVXmahWQPa8NcFdiJKszPxflsUY9RCDA
+---
+2018/03/12 10:57:41 [error] [exception.CException] CException: UserController cannot find the requested view "loan". in C:\xampp\htdocs\framework\web\CController.php:881
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(785): CController->renderPartial('loan', NULL, true)
+#1 C:\xampp\htdocs\Altered\protected\controllers\UserController.php(15): CController->render('loan')
+#2 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): UserController->actionLoan()
+#3 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('loan')
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('user/loan')
+#8 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\Altered\index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/altered/index.php/h3wL5d7f9_fYcPEnnG4udzPM1jDO9yjyT6IaRqC1sOI
+HTTP_REFERER=http://localhost/altered/index.php/dXTB2UKrBHGmVXmahWQPa8NcFdiJKszPxflsUY9RCDA
+---

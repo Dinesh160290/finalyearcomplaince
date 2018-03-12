@@ -1,5 +1,5 @@
 var password = document.getElementById("new-pass")
-  , confirm_password = document.getElementById("confirm_pass");
+  , confirm_password = document.getElementById("confirm-pass");
 
 function validatePassword(){
   if(password.value != confirm_password.value) {

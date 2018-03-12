@@ -10,6 +10,11 @@ class UserController extends Controller
         $this->render('registration');
     }
 
+    public function actionLoan()
+    {
+        $this->render('loan');
+    }
+    
     public function actionError()
     {
         if ($error = Yii::app()->errorHandler->error)

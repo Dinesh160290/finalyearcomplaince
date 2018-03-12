@@ -42,7 +42,7 @@ return array(
                 'posts/<tag:.*?>'               => 'post/index',
                 '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
             ),
-        ),
+       ),
         'log'          => array(
             'class'  => 'CLogRouter',
             'routes' => array(
